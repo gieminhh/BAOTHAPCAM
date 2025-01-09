@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+   Login
+  </title>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .bg-video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+        .login-container {
+            position: relative;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+        }
+        .input-group-text {
+            background-color: #3AA7A3;
+            color: white;
+        }
+        .btn-primary {
+            background-color: #3AA7A3;
+            border: none;
+        }
+  </style>
+ </head>
+ <body>
+  <video autoplay loop muted class="bg-video">
+   <source src="./6206837111422.mp4" type="video/mp4">
+   Your browser does not support the video tag.
+  </video>
+  <div class="login-container">
+   <img alt="Logo image" height="150" src="./N3.png" width="150"/>
+   <h1>
+    XIN CHÀO
+   </h1>
+   <p>
+    ĐĂNG NHẬP ĐỂ XEM LỊCH SỬ ĐỌC, QUẢN LÝ TÀI KHOẢN, V.V..
+   </p>
+   <form>
+    <div class="input-group mb-3">
+     <input aria-label="Tài khoản" class="form-control" placeholder="Tài khoản" type="text"/>
+     <span class="input-group-text">
+      <i class="fas fa-user">
+      </i>
+     </span>
+    </div>
+    <div class="input-group mb-3">
+     <input aria-label="Mật khẩu" class="form-control" placeholder="Mật khẩu" type="password"/>
+     <span class="input-group-text">
+      <i class="fas fa-key">
+      </i>
+     </span>
+    </div>
+    <a href="./index.html" class="btn btn-primary">
+     Đăng nhập
+    </a>
+   </form>
+   <div class="register-link">
+    <p>
+     chưa có tài khoản?
+    </p>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,304 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Thập Cẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+    <style>
+        :root {
+            --primary-color: #3AA7A3;
+        }  
+        .navbar-custom {
+            background-color: var(--primary-color);
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            opacity: 0.8;
+        }
+        
+        .news-item {
+            margin-bottom: 2rem;
+            padding: 15px;
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .news-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .news-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .news-item:hover img {
+            transform: scale(1.03);
+        }
+
+        .news-item h5 {
+            position: relative;
+            padding-bottom: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .news-item h5:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .news-item:hover h5:after {
+            width: 100%;
+        }
+
+        .news-item:hover h5 {
+            color: var(--primary-color);
+        }
+
+        .news-item a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        .news-item a:hover {
+            color: var(--primary-color);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .news-item {
+            animation: fadeIn 0.5s ease forwards;
+            opacity: 0;
+            animation-delay: calc(var(--animation-order) * 0.1s);
+        }
+        
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            margin-top: 2rem;
+        }
+
+        .card-img-top{
+            width:415px;
+            height:325px;
+        }
+        .card-title{
+            height:70px;
+        }
+    </style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3AA7A3;">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                <img src="N3.png" alt="Logo" style="height: 40px;">
+                <span class="logo-text ms-2">BÁO THẬP CẨM</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html"><span style="text-shadow: 5px 5px 5px black;">TRANG CHỦ</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./esport.html">ESPORTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="annime-dienanh.html">MANGA/FILMS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./kham-pha.html">KHÁM PHÁ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./hong.html">HÓNG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cong-dong.html">CỘNG ĐỒNG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Gioithieu.html">ABOUT US</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <a href="./login.html" class="nav-link text-white">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content">
+<div class="container mt-4">
+    <div class="row mb-4">
+        <div class="col-12">
+            <img src="https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2022/05/zzz-thumb-2.jpg" class="img-fluid rounded" alt="Banner">
+        </div>
+    </div>
+
+    <div class="section-title mb-4">
+        <a href="./tin-tuc/zzz.html" class="text-decoration-none text-dark">
+            <h4>Zenless Zone Zero có thể là tựa game tập hợp cả ưu điểm của Genshin Impact và Honkai 3rd để chinh phục game thủ</h4>
+        </a>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <a href="./tin-tuc/unity.html" class="text-decoration-none text-dark">
+                    <img src="https://gamek.mediacdn.vn/zoom/220_160/133514250583805952/2024/12/3/avatar1733215879882-17332158818141839785232.png" class="card-img-top" alt="News 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Unity đã có những chia sẻ về game mobile tại sự kiện Gamesforum Vietnam 2024.</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <a href="./tin-tuc/mai-dora.html" class="text-decoration-none text-dark">
+                    <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2024/12/4/avatar1733288425351-1733288426300354173412.jpg" class="card-img-top" alt="News 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Manga One Piece lại mang tin buồn đến cho độc giả.</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <a href="./tin-tuc/gia-gai-streamer.html" class="text-decoration-none text-dark">
+                    <img src="https://gamek.mediacdn.vn/zoom/220_160/133514250583805952/2024/12/3/avatar1733201504361-17332015086101963133239.jpg" class="card-img-top" alt="News 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Giả gái 4 năm với "mục đích nhạy cảm", game thủ bất ngờ bị hot girl chính chủ "bắt quả tang" theo cách không ngờ.</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title mb-4 mt-5">Có thể bạn quan tâm</div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <a href="./tin-tuc/honkai-star-rail-update.html" class="text-decoration-none text-dark">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://minhtuanmobile.com/uploads/blog/honkai-star-rail-tiet-lo-nguyen-lieu-nang-cap-aventurine-dang-edit-240306013415.jpg" class="img-fluid rounded" alt="News">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Honkai: Star Rail ra mắt nhân vật mới trong bản cập nhật 2.1</h5>
+                                <p class="card-text">Trải nghiệm hành trình mới với nhân vật độc đáo trong phiên bản cập nhật mới nhất của Honkai: Star Rail.</p>
+                                <p class="card-text"><small class="text-muted">3 giờ trước</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card mb-4">
+                <a href="./tin-tuc/riot-games-mmorpg.html" class="text-decoration-none text-dark">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://i0.wp.com/thebusinessofesports.com/wp-content/uploads/2022/05/riot-games.jpg?resize=1024%2C576&ssl=1" class="img-fluid rounded" alt="News">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Riot Games công bố dự án game MMORPG mới trong vũ trụ League of Legends</h5>
+                                <p class="card-text">Sau nhiều năm chờ đợi, người hâm mộ cuối cùng cũng được nhìn thấy hình ảnh đầu tiên của dự án MMORPG.</p>
+                                <p class="card-text"><small class="text-muted">5 giờ trước</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card mb-4">
+                <a href="./tin-tuc/top-indie-games-2024.html" class="text-decoration-none text-dark">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2024/12/game-indie-thumb.jpg.webp" class="img-fluid rounded" alt="News">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Top những tựa game indie đáng chú ý trong năm 2024</h5>
+                                <p class="card-text">Điểm qua những tựa game độc lập xuất sắc đã và đang gây bão trong cộng đồng game thủ.</p>
+                                <p class="card-text"><small class="text-muted">8 giờ trước</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Tin Nổi Bật</h5>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a href="./esports/team-spirit-champion.html" class="list-group-item list-group-item-action">
+                        <small class="text-muted">Esports</small>
+                        <p class="mb-1">Team Spirit vô địch DOTA 2 The International 2024</p>
+                    </a>
+                    <a href="./mobile/pubg-mobile-update.html" class="list-group-item list-group-item-action">
+                        <small class="text-muted">Game Mobile</small>
+                        <p class="mb-1">PUBG Mobile công bố bản đồ mới với nhiều tính năng đột phá</p>
+                    </a>
+                    <a href="./pc/gta6-release-date.html" class="list-group-item list-group-item-action">
+                        <small class="text-muted">Game PC</small>
+                        <p class="mb-1">GTA 6: Những thông tin mới nhất về ngày ra mắt</p>
+                    </a>
+                    <a href="./manga-anime/one-piece-live-action.html" class="list-group-item list-group-item-action">
+                        <small class="text-muted">Manga/Anime</small>
+                        <p class="mb-1">One Piece Live Action season 2 xác nhận ngày khởi quay</p>
+                    </a>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+    <div class="footer text-center">
+        <div class="container">
+            <a href="#">LIÊN HỆ</a>
+            <span>|</span>
+            <a href="#">CHÍNH SÁCH BẢO MẬT</a>
+            <span>|</span>
+            <span>KẾT NỐI VỚI CHÚNG TÔI:</span>
+            <div class="social-icons d-inline-block">
+                <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
