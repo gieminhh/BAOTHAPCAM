@@ -1,0 +1,39 @@
+[build]
+command = ""
+publish = "."
+
+[[redirects]]
+from = "/index"
+to = "/index.html"
+status = 200
+
+[[redirects]]
+from = "/esport"
+to = "/esport.html"
+status = 200
+
+[[redirects]]
+from = "/annime-dienanh"
+to = "/annime-dienanh.html"
+status = 200
+
+[[redirects]]
+from = "/kham-pha"
+to = "/kham-pha.html"
+status = 200
+
+[[redirects]]
+from = "/hong"
+to = "/hong.html"
+status = 200
+
+[[redirects]]
+from = "/cong-dong"
+to = "/cong-dong.html"
+status = 200
+
+[[redirects]]
+from = "/Gioithieu"
+to = "/Gioithieu.html"
+status = 200
+
